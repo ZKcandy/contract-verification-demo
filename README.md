@@ -1,6 +1,6 @@
-# ZKcandy Harhat Deployment Workbench
+# ZKcandy Hardhat Smart Contract Deployment and Verification Demo
 
-This repo will set up a workbench to deploy Solidity contracts to the ZKcandy Mainnet and Testnet. It uses tooling and scaffolding from [Hardhat](https://hardhat.org/) and [zksync-cli](https://github.com/matter-labs/zksync-cli). For more information pertaining to syntax and/or commands related to the aforementioned projects, please consult their respective documentation(s).
+This repo provides a demo on how to deploy and verify Solidity contracts on the ZKcandy Mainnet. 
 
 ## Project Layout
 
@@ -32,13 +32,7 @@ This repo already has both `.env.example` and `.env` added to the `.gitignore` l
 
 ### Network Support
 
-`hardhat.config.ts` comes with a list of networks to deploy and test contracts. Add more by adjusting the `networks` section in the `hardhat.config.ts`. To make a network the default, set the `defaultNetwork` to its name. You can also override the default using the `--network` option, like: `hardhat test --network dockerizedNode`.
-
-### Local Tests
-
-Running `npm run test` by default runs the [ZKsync In-memory Node](https://docs.zksync.io/build/test-and-debug/in-memory-node) provided by the [@matterlabs/hardhat-zksync-node](https://docs.zksync.io/build/tooling/hardhat/hardhat-zksync-node) tool.
-
-Important: ZKsync In-memory Node currently supports only the L2 node. If contracts also need L1, use another testing environment like Dockerized Node. Refer to [test documentation](https://docs.zksync.io/build/test-and-debug) for details.
+`hardhat.config.ts` comes with the settings required for ZKcandy Mainnet. 
 
 ## Useful Links
 
