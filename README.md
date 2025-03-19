@@ -1,10 +1,10 @@
-# ZKsync Hardhat project template
+# ZKcandy Harhat Deployment Workbench
 
-This project was scaffolded with [zksync-cli](https://github.com/matter-labs/zksync-cli).
+This repo will set up a workbench to deploy Solidity contracts to the ZKcandy Mainnet and Testnet. It uses tooling and scaffolding from [Hardhat](https://hardhat.org/) and [zksync-cli](https://github.com/matter-labs/zksync-cli). For more information pertaining to syntax and/or commands related to the aforementioned projects, please consult their respective documentation(s).
 
 ## Project Layout
 
-- `/contracts`: Contains solidity smart contracts.
+- `/contracts`: Contains example solidity smart contracts.
 - `/deploy`: Scripts for contract deployment and interaction.
 - `/test`: Test files.
 - `hardhat.config.ts`: Configuration settings.
@@ -28,6 +28,8 @@ Rename `.env.example` to `.env` and fill in your private key:
 WALLET_PRIVATE_KEY=your_private_key_here...
 ```
 
+This repo already has both `.env.example` and `.env` added to the `.gitignore` list. However, be mindful when sharing access to your local copy of this repo and/or your working folder in order to prevent exposing your wallet private key.
+
 ### Network Support
 
 `hardhat.config.ts` comes with a list of networks to deploy and test contracts. Add more by adjusting the `networks` section in the `hardhat.config.ts`. To make a network the default, set the `defaultNetwork` to its name. You can also override the default using the `--network` option, like: `hardhat test --network dockerizedNode`.
@@ -40,11 +42,12 @@ Important: ZKsync In-memory Node currently supports only the L2 node. If contrac
 
 ## Useful Links
 
-- [Docs](https://docs.zksync.io/build)
-- [Official Site](https://zksync.io/)
-- [GitHub](https://github.com/matter-labs)
-- [Twitter](https://twitter.com/zksync)
-- [Discord](https://join.zksync.dev/)
+- [ZKcandy Docs](https://litepaper.zkcandy.io)
+- [Official Site](https://zkcandy.io/)
+- [Elastic Chain Docs](https://docs.zksync.io/build)
+- [GitHub](https://github.com/zkcandy)
+- [Twitter/X](https://twitter.com/zkcandyhq)
+- [Discord](https://discord.gg/zkcandy)
 
 ## License
 
