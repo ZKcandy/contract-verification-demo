@@ -1,10 +1,10 @@
-# ZKsync Hardhat project template
+# ZKcandy Hardhat Smart Contract Deployment and Verification Demo
 
-This project was scaffolded with [zksync-cli](https://github.com/matter-labs/zksync-cli).
+This repo provides a demo on how to deploy and verify Solidity contracts on the ZKcandy Mainnet. 
 
 ## Project Layout
 
-- `/contracts`: Contains solidity smart contracts.
+- `/contracts`: Contains example solidity smart contracts.
 - `/deploy`: Scripts for contract deployment and interaction.
 - `/test`: Test files.
 - `hardhat.config.ts`: Configuration settings.
@@ -28,23 +28,20 @@ Rename `.env.example` to `.env` and fill in your private key:
 WALLET_PRIVATE_KEY=your_private_key_here...
 ```
 
+This repo already has both `.env.example` and `.env` added to the `.gitignore` list. However, be mindful when sharing access to your local copy of this repo and/or your working folder in order to prevent exposing your wallet private key.
+
 ### Network Support
 
-`hardhat.config.ts` comes with a list of networks to deploy and test contracts. Add more by adjusting the `networks` section in the `hardhat.config.ts`. To make a network the default, set the `defaultNetwork` to its name. You can also override the default using the `--network` option, like: `hardhat test --network dockerizedNode`.
-
-### Local Tests
-
-Running `npm run test` by default runs the [ZKsync In-memory Node](https://docs.zksync.io/build/test-and-debug/in-memory-node) provided by the [@matterlabs/hardhat-zksync-node](https://docs.zksync.io/build/tooling/hardhat/hardhat-zksync-node) tool.
-
-Important: ZKsync In-memory Node currently supports only the L2 node. If contracts also need L1, use another testing environment like Dockerized Node. Refer to [test documentation](https://docs.zksync.io/build/test-and-debug) for details.
+`hardhat.config.ts` comes with the settings required for ZKcandy Mainnet. 
 
 ## Useful Links
 
-- [Docs](https://docs.zksync.io/build)
-- [Official Site](https://zksync.io/)
-- [GitHub](https://github.com/matter-labs)
-- [Twitter](https://twitter.com/zksync)
-- [Discord](https://join.zksync.dev/)
+- [ZKcandy Docs](https://litepaper.zkcandy.io)
+- [Official Site](https://zkcandy.io/)
+- [Elastic Chain Docs](https://docs.zksync.io/build)
+- [GitHub](https://github.com/zkcandy)
+- [Twitter/X](https://twitter.com/zkcandyhq)
+- [Discord](https://discord.gg/zkcandy)
 
 ## License
 
