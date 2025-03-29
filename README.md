@@ -18,6 +18,12 @@ This repo provides a demo on how to deploy and verify Solidity contracts on the 
 
 Note: Both `npm run deploy` and `npm run interact` are set in the `package.json`. You can also run your files directly, for example: `npx hardhat deploy-zksync --script deploy.ts`
 
+## Verify
+
+`npx hardhat verify --network <NetworkName> <contractAddress> <contructorArgs>`
+
+If you deploy the example Greeter contract using `npx hardhat run scripts/deploy.ts` and get back a contract address and keep the configs as they are, then you can run `npx hardhat verify --network ZKcandyMainnet <contractAddress> 'Hi there!'` to get successfully verify the deployed contract on ZKcandy Mainnet. 
+
 ### Environment Settings
 
 To keep private keys safe, this project pulls in environment variables from `.env` files. Primarily, it fetches the wallet's private key.
