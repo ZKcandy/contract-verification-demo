@@ -28,13 +28,27 @@ const config: HardhatUserConfig = {
   },
   zksolc: {
     version: "latest",
+    compilerSource: "binary",
     settings: {
+      optimizer: {
+        enabled: true
+        // mode: "3",
+        // fallback_to_optimizing_for_size: true,
+      },
+      codegen: 'yul'
       // find all available options in the official documentation
       // https://docs.zksync.io/build/tooling/hardhat/hardhat-zksync-solc#configuration
     },
   },
   solidity: {
     version: "0.8.24",
+    settings: {
+      viaIR: true,
+      optimizer: {
+        enabled: true
+        // runs: 200
+      }
+    }
   }
 };
 
